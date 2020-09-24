@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/sidenav_menu.css" />
+    <link rel="manifest" href="manifest.json" />
+    <!-- ios support -->
+    <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
+    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" content="#db4938" />
+    <link rel="icon" type="image/png" href="icon-128x128.png" sizes="128x128" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.bundle.min.js"></script>
+    <title>The Coffee House PWA - Menu</title>
+</head>
+<body class="bg-fullscreen">
+    <header>
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a href="#" class="navbar-brand nav-link">
+                <img class="logo" src="images/logoTCH.png" alt="TCH logo" height="50" , width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navi">
+                <ul class="navbar-nav">
+                    <li class="nav-item"> <a href="index.html" class="nav-link">&nbsp;<i class="fa fa-list">&nbsp; Menu</i></a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">&nbsp;<i class="fa fa-newspaper-o">&nbsp; News</i></a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">&nbsp;<i class="fa fa-calendar">&nbsp; Event</i></a> </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a href="#" class="nav-link">&nbsp;<i class="fa fa-user">&nbsp;Join Now</i></a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">&nbsp;<i class="fa fa-sign-in">&nbsp;Sign in</i></a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">&nbsp;<i class="fa fa-map-marker">&nbsp;Find a Store</i></a> </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="sidenav"></nav>
+    </header>
+
+    <br><br><br><br>
+
+    <main>
+        <div class="menu"></div>
+    </main>
+
+    <script src="js/myscript.js"></script>
+    <script async src="https://unpkg.com/pwacompat" crossorigin="anonymous"></script>
+    <script type="module">
+        // detect iOS Safari
+        if (('standalone' in navigator) && (!navigator.standalone)) {
+            import('https://unpkg.com/pwacompat');
+        }
+    </script>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="nav-item">
+                <a href="#" class="btn btn-outline-light">&nbsp;<i class="fa fa-globe">&nbsp;By Luu Hung & Thien Y</i> </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
