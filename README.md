@@ -1,6 +1,4 @@
 # Progressive Web Apps Demo
-- This is my school mid-term project in 2020 which demo a Progressive Web App (PWA)
-- You can visit it via this link: https://tye2002.github.io/Progressive-Web-Apps-Demo/
 
 ## Introduction
 A Progressive Web App is a web app that delivers an app-like experience to users by using modern web capabilities.
